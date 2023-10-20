@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+.active-nav{
+  color: #ffbd1a !important;
+}
+.navbar a:hover{
+  color: #ffbd1a !important;
+}
+.cname{
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  font-size: 35px;
+}
+#header {
+  z-index: 2;
+  background-color:#4b5b6a;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 0 !important;
+}
+
+#banner{
+  background-image: url('../images/banner-bg.png');
+  position: absolute;
+  top: 0px;
+  height: 110vh;
+  width: 100%;
+  background-size: cover;
+  z-index: 1;
+}
+#banner h1{
+  margin-top: 300px;
+  font-size: 55px;
+  font-family: 'Satisfy', cursive;
+}
+#banner h2{
+  margin-top: 15px;
+  font-size: 20px;
+}
+#banner a i{
+
+  font-size: 35px;
+  animation-name:updown;
+  animation-duration: 1s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes updown{
+  0%{
+    margin-top: 15px;
+  }
+  100%{
+    margin-top: 25px;
+  }
+}
+#about{
+  margin-top:  650px;
+  padding: 100px 10px;
+}
+.about-title-bg , .resume-title-bg, .service-title-bg, .pricing-title-bg, .contact-title-bg{
+  color: #d7d7d7;
+  font-size: 45px;
+  font-weight: 602;
+  position: relative;
+  bottom: -38px;
+  z-index: -1;
+  letter-spacing: 3px;
+}
+.about-title , .resume-title, .service-title, .pricing-title, .contact-title{
+  font-size: 32px;
+  font-weight:700;
+  color: #3b434a;
+}
+
+.about-img{
+  background-image: url('../images/about-img.jpg');
+  min-height: 650px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+}
+.fa-award , .fa-clock , .fa-face-smile{
+  font-size: 30px;
+}
+.about-span{
+  font-weight: 800;
+  font-size: 36px;
+  color: #3b434a;
+}
+.resume-box-header{
+  color: #3b434a;
+  font-weight: bolder;
+}
+#resume{
+  padding: 120px 10px;
+}
+.resume-box::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0px;
+  background: #fff;
+  border: 2px solid #82909c;
+
+}
+.resume-box{
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #82909c;
+  position: relative;
+}
+.resume-year{
+  background-color: #d7d7d7;
+  display: inline-block;
+  padding: 5px;
+}
+.resume-box ul li{
+  margin-bottom: 10px;
+}
+#service{
+  padding: 120px 10px;
+}
+.fa-dribbble, .fa-file-lines, .fa-gauge-high, .fa-earth-americas{
+  color: #ffbd1a;
+  font-size: 35px;
+  background-color: bisque;
+  height: 60px;
+  width: 60px;
+  padding: 12px;
+  border-radius: 50%;
+}
+.service-card{
+  box-shadow: 5px 10px 18px #888888;
+}
+.card-title{
+  font-weight: bolder;
+}
+.card:hover{
+  border-color: #ffbd1a;
+}
+.card:hover h5{
+  color: #ffbd1a;
+}
+#testimonial{
+  background-image: url('../images/testimonial-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  text-align: center;
+  margin-top: 176px;
+}
+.testimonial-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #59504d;
+}
+.fa-quote-left , .fa-quote-right{
+  font-size: 30px;
+  color: #d7d7d7;
+  padding:0px 10px;
+
+}
+.portfolio-ul{
+  list-style: none;
+}
+.portfolio-li{
+  display: inline-block;
+  font-weight: 600;
+}
+.portfolio-li:hover{
+  border: 2px solid #ffc107 ;
+  padding:2px 5px;
+  cursor: pointer;
+  color: #ffbd1a;
+}
+.portfolio-active {
+  border: 2px solid #ffc107 ;
+  padding:2px 5px;
+  color: #ffbd1a;
+}
+#portfolio{
+  min-height: 100vh;
+  padding: 120px 10px;
+}
+.portfolio-img img{
+  transition: all 0.8s ease-in-out;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.portfolio-img img:hover{
+  transform: scale(0.9);
+}
+.img4{
+  position: relative; 
+  left: 0; 
+  top: 31px;
+}
+.img5{
+  position: relative; 
+  left: 0; 
+  top: -261px;
+}
+.img7{
+  position: relative; 
+  left: 0; 
+  top: -301px;
+}
+.img-8{
+  position: relative; 
+  left: 759px; 
+  top: -572px;
+}
+#pricing{
+  position: relative;
+  bottom: 340px;
+}
+#contact{
+  position: relative;
+  bottom: 200px;
+  padding: 120px 10px;
+}
+
+.share-link i{
+  font-size: 30px;
+  margin-top: 14px;
+  background-color: #fff6e4;
+  border-radius: 50%;
+  padding: 21px;
+  color: #ffbd1a;
+}
+.contact-span1{
+  font-weight: 600;
+}
+.social-head-icon{
+  border: 1px solid #dde1e4;
+  border-radius: 50%;
+  padding: 15px;
+  color: #687683;
+  font-size: 18px;
+}
+.social-head-icon:hover{
+  background-color: #ffbd1a;
+  color: #fff;
+
+}
+.social-btn{
+  padding: 10px;
+  border-radius: 10px;
+}
+.social-btn:hover{
+  background-color:#facc41 !important ;
+  color:red !important;
+}
+.contact-ic2, .contact-ic3{
+  font-size: 20px;
+  margin-top: 14px;
+  background-color: #fff6e4;
+  border-radius: 50%;
+  padding: 21px;
+  color: #ffbd1a;
+}
+footer{
+  overflow: hidden;
+  background-image: url('../images/footerbg.png');
+  height: 50vh;
+  position: relative;
+  bottom: 0px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+}
+footer h2{
+  font-family: 'Satisfy', cursive;
+  font-size: 45px;
+}
+.footer-head-icon{
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #ffbd1a;
+}
+@media (max-width: 576px) {
+  #banner{
+    background-image: url('../images/banner-bg.png');
+    position: absolute;
+    top: 0px;
+    height: 110vh;
+    width: 100%;
+    background-size: cover;
+    z-index: 1;
+  }
+  #about{
+    margin-top:  650px;
+    padding: 200px 10px;
+  } 
+  .about-title-bg , .resume-title-bg, .service-title-bg, .pricing-title-bg, .contact-title-bg{
+    color: #d7d7d7;
+    font-size: 30px;
+    font-weight: 602;
+    position: relative;
+    bottom: -24px;
+    z-index: -1;
+    letter-spacing: 3px;
+  }
+  .about-title , .resume-title, .service-title, .pricing-title, .contact-title{
+    font-size: 22px;
+    font-weight:700;
+    color: #3b434a;
+  }
+  .portfolio-img img{
+    margin-bottom: 20px;
+  }
+  .img4{
+    position: relative; 
+    left: 0; 
+    top: 0;
+  }
+  .img5{
+    position: relative; 
+    left: 0; 
+    top: 0;
+  }
+  .img7{
+    position: relative; 
+    left: 0; 
+    top: 0;
+  }
+  .img-8{
+    position: relative; 
+    left: 0; 
+    top: 0;
+  }
+  #pricing{
+    position: relative;
+    bottom: 0px;
+  }
+  #contact{
+    position: relative;
+    bottom: 0;
+  }
+  
+}
